@@ -4,7 +4,8 @@
   "description": "FE23 Homework 02 Gulp, SCSS",
   "main": "scripts/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "publish": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
     "type": "git",
