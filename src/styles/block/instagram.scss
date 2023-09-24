@@ -1,0 +1,108 @@
+.instagram {
+	padding-bottom: 49px;
+	@media screen and (max-width: $ui-breakpoint-m) {
+		padding-top: $ui-heading-spacing-top;
+	}
+	@media screen and (min-width: $ui-breakpoint-m-min) {
+		padding-top: 47px;
+		background-color: $ui-bg-transparent-light;
+	}
+
+
+
+
+	&__flextitle {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		@media screen and (max-width: $ui-breakpoint-m) {
+			& span {
+				display: none;
+			}
+		}
+
+		@include heading-2-font;
+		margin-bottom: $ui-default-spacing;
+
+		&:before {
+			content: "- ";	
+		}
+
+		&--btn {
+			@media screen and (max-width: $ui-breakpoint-m) {
+				display: none;
+			}
+
+			@include default-font;
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			&:hover {
+				color: $ui-text-hover;
+			}
+
+			&:after {
+				content: " -";
+			}
+
+		}
+	}
+
+
+
+
+	&__shots {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 10px;
+	}
+
+	
+	
+	&__shots--img {
+		width: 285px;
+		transition: width  $ui-transition-default, 
+					height $ui-transition-default;
+	}
+}
+
+
+
+// HIDING EXTRA IMAGES AND RESIZING THEM ON SMALLER SCREENS:
+
+@media screen 
+and (max-width: $ui-breakpoint-m) {
+	.instagram__shot:nth-child(n + 2) {
+		display: none;
+	}
+	.instagram__shots--img {
+		width: 285px;
+	}
+}
+
+@media screen 
+and (min-width: $ui-breakpoint-m-min) 
+and (max-width: $ui-breakpoint-l) {
+	.instagram__shots--img {
+		width: 200px;
+	}
+	.instagram__shot:nth-child(n + 4) {
+		display: none;
+	}
+}
+
+@media screen 
+and (min-width: $ui-breakpoint-l-min) 
+and (max-width: $ui-breakpoint-xl) {
+	.instagram__shot:nth-child(n + 4) {
+		display: none;
+	}
+	.instagram__shots--img {
+		width: 265px;
+	}
+}

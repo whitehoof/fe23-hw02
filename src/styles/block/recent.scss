@@ -1,0 +1,96 @@
+.recent {
+	margin-top: $ui-heading-spacing-top;
+	@media screen and (min-width: $ui-breakpoint-m-min) {
+		margin-top: 56px;
+	}
+	@media screen and (min-width: $ui-breakpoint-xl-min) {
+		margin-top: 66px;
+	}
+
+
+	&__title {
+		@include heading-2-font;
+		margin-bottom: $ui-default-spacing;
+		text-transform: uppercase;
+
+		&:before {
+			content: '- ';
+		}
+	}
+
+
+	&__card {
+		margin-bottom: $ui-default-spacing;
+		max-width: 555px;
+		text-decoration: none;
+
+		@media screen and (min-width: $ui-breakpoint-m-min) {
+			display: flex;
+			gap: $ui-default-spacing;
+		}
+	}
+
+	&__card:hover .recent__card--title {
+		color: $ui-text-hover;
+	}
+	
+	
+	&__card--img {
+		width: 160px;
+		margin-bottom: 11px;
+	}
+
+
+	&__card--title {
+		@include heading-3-font;
+	}
+
+
+	&__card--info {
+		font-size: 11px;
+		color: $ui-text-grey-light;
+
+		@media screen and (min-width: $ui-breakpoint-m-min) {
+			margin-bottom: 13px;
+		}
+	}
+
+	& span:before {
+		content: " / "
+	}
+
+	&__card--description {
+		@include para-font;
+		display: none;
+		word-break: break-word;
+
+		@media screen and (min-width: $ui-breakpoint-m-min) {
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+// HIDING FOURTH CARD ON MOBILE:
+@media screen and (max-width: $ui-breakpoint-m) {
+	.recent__card:nth-child(n + 4) {
+		display: none;
+	}
+}
+
+// TWO BY TWO GRID OF POSTS ON BIG SCREENS:
+@media screen and (min-width: $ui-breakpoint-xl-min) {
+	.recent__cards--flex {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px 55px;
+		margin-bottom: 40px;
+	}
+	.recent__card {
+		// because 33% allows three elements per row, and we don't want that.
+		flex: 1 0 34%;
+	}
+}

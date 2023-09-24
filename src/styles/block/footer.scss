@@ -1,0 +1,75 @@
+.footer {
+	background-color: $ui-bg-dark;
+	color: $ui-text-light-medium;
+	text-align: center;
+
+	&__title {
+		@include heading-2-font;
+		padding-top: $ui-heading-spacing-top;
+		padding-bottom: 8px;
+		color: $ui-text-light;
+
+		&:before, 
+		&:after {
+			content: " - ";
+		}
+	}
+
+	&__text {
+		margin-inline: auto;
+		max-width: 684px;
+		font-size: 12px;
+		line-height: 26px;
+		margin-bottom: $ui-default-spacing;
+		
+		@media screen and (max-width: $ui-breakpoint-m) {
+			&--more {
+				display: none;
+			}
+		}
+	}
+
+	&__social {
+		display: flex;
+		justify-content: center;
+		gap: 5px;
+		margin-inline: auto;
+		margin-bottom: $ui-default-spacing;
+		@media screen and (min-width: $ui-breakpoint-m-min) {
+			margin-bottom: 34px;
+		}
+
+		&--item {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 34px;
+			height: 34px;
+			border: 2px solid $ui-text-light;
+			border-radius: 50%;
+
+			&_rss		{	border-color: $ui-color-rss;		}
+			&_facebook	{	border-color: $ui-color-facebook;	}
+			&_twitter	{	border-color: $ui-color-twitter;	}
+			&_dribbble	{	border-color: $ui-color-dribbble;	}
+			&_pinterest	{	border-color: $ui-color-pinterest;	}
+		}
+	}
+
+	&__address {
+		padding-bottom: 47px;
+		
+		& a:hover,
+		& a:active {
+			color: $ui-text-hover;
+		}
+	}
+
+	&__address--info {
+		color: $ui-text-light-medium;
+		line-height: 24px;
+		font-size: 14px;
+		text-decoration: none;
+	}
+}
+

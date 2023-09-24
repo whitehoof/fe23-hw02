@@ -1,0 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@mixin default-font {
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	color: $ui-text-grey-dark;
+}
+
+@mixin para-font {
+	@include default-font;
+	color: $ui-text-grey-medium;
+}
+
+@mixin heading-font {
+	@include default-font;
+	font-weight: 700;
+	
+	@media screen and (min-width: $ui-breakpoint-m-min) {
+		font-size: 16px;
+	}
+}
+
+@mixin heading-2-font {
+	@include heading-font;
+	text-transform: uppercase;
+	line-height: 22px;
+}
+
+@mixin heading-3-font {
+	@include heading-font;
+	text-transform: capitalize;
+	line-height: 30px;
+}

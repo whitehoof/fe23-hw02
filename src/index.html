@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles/styles.min.css">
+
+	<title>fe23 hw02 gulp scss</title>
+</head>
+
+<body>
+	<!-- block-name__elem-name--mod-name_mod-val -->
+
+
+
+
+	<header class="header">
+		<div class="container">
+
+			<input type="checkbox" id="header__nav--toggle" class="header__nav--toggle">
+			<label class="header__burger" for="header__nav--toggle"></label>
+			<nav class="header__nav">
+				<ul class="header__nav--list">
+					<li class="header__nav--item"><a href="index.html"	class="header__nav--link">home</a></li>
+					<li class="header__nav--item"><a href="#"			class="header__nav--link">about us</a></li>
+					<li class="header__nav--item"><a href="#"			class="header__nav--link">our journal</a></li>
+					<li class="header__nav--item"><a href="#"			class="header__nav--link">projects</a></li>
+					<li class="header__nav--item"><a href="#"			class="header__nav--link">news</a></li>
+					<li class="header__nav--item"><a href="#"			class="header__nav--link">features</a></li>
+					<li class="header__nav--item"><a href="#"			class="header__nav--link">contact</a></li>
+				</ul>
+			</nav>
+
+			<img class="header__img"
+				srcset="images/intro-img-s.png 320w,
+						images/intro-img-m.png 768w,
+						images/intro-img-l.png 1170w"
+				src="images/intro-img-s.png"
+				alt="Railroad">
+		</div> <!-- /.container -->
+	</header>
+
+
+
+
+	<section class="recent">
+		<div class="container">
+
+			<h2 class="recent__title">our recent posts</h2>
+
+			<div class="recent__cards--flex">
+				<a href="#" class="recent__card">
+					<img class="recent__card--img" src="images/post-img-1.png" alt="Aenean">
+					<div class="recent__card--text">
+						<h3 class="recent__card--title">таємниця залізничного світлофора</h3>
+						<p class="recent__card--info">Photography, Mystery<span>9 Comments</span></p>
+						<p class="recent__card--description">Збільшуй ширину браузера від найменшої і побач таємницю світлофора на верхній світлині.</p>
+					</div>
+				</a>
+
+				<a class="recent__card">
+					<img class="recent__card--img" src="images/post-img-2.png" alt="Aenean">
+					<div class="recent__card--text">
+						<h3 class="recent__card--title">adipiscing etiam vestibulum aenean</h3>
+						<p class="recent__card--info">Photography, City<span>12 Comments</span></p>
+						<p class="recent__card--description">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					</div>
+				</a>
+
+				<a href="#" class="recent__card">
+					<img class="recent__card--img" src="images/post-img-3.png" alt="Aenean">
+					<div class="recent__card--text">
+						<h3 class="recent__card--title">etiam vestibulum aenean udipiscing</h3>
+						<p class="recent__card--info">Journal<span>19 Comments</span></p>
+						<p class="recent__card--description">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					</div>
+				</a>
+
+				<a href="#" class="recent__card">
+					<img class="recent__card--img" src="images/post-img-4.png" alt="Aenean">
+					<div class="recent__card--text">
+						<h3 class="recent__card--title">vestibulum aenean adipiscing otiam</h3>
+						<p class="recent__card--info">Photography<span>27 Comments</span></p>
+						<p class="recent__card--description">Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+					</div>
+				</a>
+
+			</div> <!-- /.recent__cards--flex -->
+
+		</div> <!-- /.container -->
+	</section>
+
+
+
+
+	<section class="instagram">
+		<div class="container">
+
+			<div class="instagram__flextitle">
+				<h2 class="instagram__title">La<span>te</span>st Instagram Shot<span>s</span></h2>
+				<a href="#" class="instagram__title--btn">go to our instagram page</a>
+			</div>
+
+			<div class="instagram__shots">
+				<a href="#" class="instagram__shot"><img class="instagram__shots--img" src="images/insta-1.png" alt="bycicle"></a>
+				<a href="#" class="instagram__shot"><img class="instagram__shots--img" src="images/insta-2.png" alt="doorway"></a>
+				<a href="#" class="instagram__shot"><img class="instagram__shots--img" src="images/insta-3.png" alt="wires"></a>
+				<a href="#" class="instagram__shot"><img class="instagram__shots--img" src="images/insta-4.png" alt="car"></a>
+			</div>
+
+		</div> <!-- /.container -->
+	</section>
+
+
+
+
+	<footer class="footer">
+		<div class="container">
+			<h2 class="footer__title">get in touch with us</h2>
+			<p class="footer__text">Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor amet sed donec
+				malesuada ullamcorper odio.
+				<span class="footer__text--more">Curabitur blandit tempus porttitor vollisky inceptos mollisestor.</span>
+			</p>
+
+			<div class="footer__social">
+				<a href="#" class="footer__social--item footer__social--item_rss"><img		src="images/icon-rss.png"		alt="rss feed"></a>
+				<a href="#" class="footer__social--item footer__social--item_facebook"><img	src="images/icon-facebook.png"	alt="facebook"></a>
+				<a href="#" class="footer__social--item footer__social--item_twitter"><img	src="images/icon-twitter.png"	alt="twitter"></a>
+				<a href="#" class="footer__social--item footer__social--item_dribbble"><img	src="images/icon-dribbble.png"	alt="dribbble"></a>
+				<a href="#" class="footer__social--item footer__social--item_pinterest"><img	src="images/icon-pinterest.png"	alt="pinterest"></a>
+			</div>
+
+			<address class="footer__address">
+				<span class="footer__address--info">Moonshine St. 14-05 Light City&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp; </span>
+				<a class="footer__address--info" href="tel:001234567890">T.&nbsp;+00&nbsp;(123)&nbsp;456&nbsp;78&nbsp;90</a>&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp; 
+				<a class="footer__address--info" href="mailto:first.last@email.com">first.last@email.com</email>
+			</address>
+		</div> <!-- /.container -->
+	</footer>
+
+
+
+
+	<script src="scripts/script.min.js"></script>
+</body>
+
+</html>
