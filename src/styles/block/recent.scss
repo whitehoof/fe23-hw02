@@ -63,7 +63,7 @@
 	&__card--description {
 		@include para-font;
 		display: none;
-		word-break: break-word;
+		line-height: 26px;
 
 		@media screen and (min-width: $ui-breakpoint-m-min) {
 			display: block;
